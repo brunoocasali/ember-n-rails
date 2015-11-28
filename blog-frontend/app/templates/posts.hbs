@@ -1,0 +1,13 @@
+<h3>Post index</h3>
+
+<ul>
+  {{#each model as |post|}}
+    <li>
+      {{#link-to 'post' post}}
+        {{post.title}}
+      {{/link-to}}
+      <button {{action 'delete' post}}>Delete</button>
+    </li>
+  {{/each}}
+</ul>
+{{#link-to 'post.new'}}New Post{{/link-to}}

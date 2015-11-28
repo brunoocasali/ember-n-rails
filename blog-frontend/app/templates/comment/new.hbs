@@ -1,0 +1,15 @@
+<form>
+  <div>
+    <label>Author:</label>
+    {{input type="text" value=model.author}}
+  </div>
+  <div>
+    <label>Body:</label>
+    {{textarea rows="5" value=model.body}}
+  </div>
+
+  <div>
+    <button {{action 'save'}}>Speichern</button>
+    <button {{action 'cancel'}}>Abbrechen</button>
+  </div>
+</form>
