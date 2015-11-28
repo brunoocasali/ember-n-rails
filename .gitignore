@@ -2,19 +2,17 @@
 capybara-*.html
 .rspec
 /log
-/tmp
-/db/*.sqlite3
-/db/*.sqlite3-journal
-/public/system
-/coverage/
+blog-backend/tmp
+blog-backend/public/system
+blog-backend/coverage/
 /spec/tmp
 **.orig
 rerun.txt
 pickle-email-*.html
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
-config/initializers/secret_token.rb
-config/secrets.yml
+blog-backend/config/initializers/secret_token.rb
+blog-backend/config/secrets.yml
 
 ## Environment normalisation:
 /.bundle
@@ -33,3 +31,21 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+blog-frontend/dist
+blog-frontend/tmp
+
+# dependencies
+blog-frontend/node_modules
+blog-frontend/bower_components
+
+# misc
+blog-frontend/.sass-cache
+blog-frontend/connect.lock
+blog-frontend/coverage/*
+blog-frontend/libpeerconnection.log
+npm-debug.log
+testem.log
